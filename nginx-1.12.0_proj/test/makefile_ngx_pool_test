@@ -13,6 +13,8 @@ all: $(TARGETS)
 clean:
 	$(CLEANUP)
 
+include $(NGX_ROOT)/objs/Makefile
+
 CORE_INCS = -I. \
 	-I/usr/local/include \
 	-I$(NGX_ROOT)/src/core \
@@ -21,10 +23,10 @@ CORE_INCS = -I. \
 	-I$(NGX_ROOT)/src/os/unix \
 	-I$(NGX_ROOT)/objs \
 
-NGX_PALLOC = $(NGX_ROOT)/objs/src/core/ngx_palloc.o
-NGX_STRING = $(NGX_ROOT)/objs/src/core/ngx_string.o
-NGX_ALLOC = $(NGX_ROOT)/objs/src/os/unix/ngx_alloc.o
-NGX_LOG = $(NGX_ROOT)/objs/src/core/ngx_log.o
+NGX_PALLOC = $(NGX_ROOT)/src/core/ngx_palloc.c
+NGX_STRING = $(NGX_ROOT)/src/core/ngx_string.c
+NGX_ALLOC = $(NGX_ROOT)/src/os/unix/ngx_alloc.c
+NGX_LOG = $(NGX_ROOT)/src/core/ngx_log.c
 
 OBJS = $(NGX_PALLOC) $(NGX_STRING) $(NGX_ALLOC)
 
