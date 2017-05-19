@@ -1,0 +1,6 @@
+Create a Command Line Tool macOS project.
+
+Add objs, src to project
+
+Modify Project Build Settings -> Header Search Paths to:
+/usr/local/include objs src/core src/event src/event/modules src/os/unix src/http src/http/modules src/mail src/stream
