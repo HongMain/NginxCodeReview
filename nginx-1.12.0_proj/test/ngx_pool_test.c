@@ -21,19 +21,19 @@ void dump_pool(ngx_pool_t* pool)
 {
     while (pool)  
     {  
-        printf("pool = 0x%x\n", pool);  
+	printf("pool = %p\n", pool);  
         printf("  .d\n");  
-        printf("    .last = 0x%x\n", pool->d.last);  
-        printf("    .end = 0x%x\n", pool->d.end);  
-        printf("    .next = 0x%x\n", pool->d.next);  
-        printf("    .failed = %d\n", pool->d.failed);  
-        printf("  .max = %d\n", pool->max);  
-        printf("  .current = 0x%x\n", pool->current);  
-        printf("  .chain = 0x%x\n", pool->chain);  
-        printf("  .large = 0x%x\n", pool->large);  
-        printf("  .cleanup = 0x%x\n", pool->cleanup);  
-        printf("  .log = 0x%x\n", pool->log);  
-        printf("available pool memory = %d\n\n", pool->d.end - pool->d.last);  
+        printf("    .last = %p\n", pool->d.last);  
+        printf("    .end = %p\n", pool->d.end);  
+        printf("    .next = %p\n", pool->d.next);  
+        printf("    .failed = %lu\n", pool->d.failed);  
+        printf("  .max = %lu\n", pool->max);  
+        printf("  .current = %p\n", pool->current);  
+        printf("  .chain = %p\n", pool->chain);  
+        printf("  .large = %p\n", pool->large);  
+        printf("  .cleanup = %p\n", pool->cleanup);  
+        printf("  .log = %p\n", pool->log);  
+        printf("available pool memory = %ld\n\n", pool->d.end - pool->d.last);  
         pool = pool->d.next;  
     }  
 }  

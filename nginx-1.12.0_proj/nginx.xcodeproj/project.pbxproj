@@ -170,6 +170,7 @@
 		662B1C191ECD4E7D005D51CB /* autoconf.err */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = autoconf.err; sourceTree = "<group>"; };
 		662B1C1A1ECD4E7D005D51CB /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		663F6A051EC9B75D00EA261D /* ngx_http_geo_module.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ngx_http_geo_module.c; sourceTree = "<group>"; };
+		664C0BA01ED422950072D5A8 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test; sourceTree = "<group>"; };
 		66C120A21EC9A69D0005537D /* nginx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nginx; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C120B11EC9A7E20005537D /* ngx_auto_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ngx_auto_config.h; sourceTree = "<group>"; };
 		66C120B21EC9A7E20005537D /* ngx_auto_headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ngx_auto_headers.h; sourceTree = "<group>"; };
@@ -420,6 +421,7 @@
 		66C120991EC9A69D0005537D = {
 			isa = PBXGroup;
 			children = (
+				664C0BA01ED422950072D5A8 /* test */,
 				662B1C131ECD4E54005D51CB /* conf */,
 				662B1C141ECD4E54005D51CB /* Makefile */,
 				66C120AE1EC9A7E20005537D /* objs */,

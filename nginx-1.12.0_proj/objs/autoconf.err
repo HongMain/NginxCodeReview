@@ -678,7 +678,7 @@ objs/autotest.c:7:5: warning: implicit declaration of function 'setproctitle' is
 1 warning generated.
 Undefined symbols for architecture x86_64:
   "_setproctitle", referenced from:
-      _main in autotest-a1d85d.o
+      _main in autotest-9e9cfb.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ----------
@@ -713,7 +713,7 @@ objs/autotest.c:10:23: warning: implicit declaration of function 'pwritev' is in
 1 warning generated.
 Undefined symbols for architecture x86_64:
   "_pwritev", referenced from:
-      _main in autotest-10e5e2.o
+      _main in autotest-e420e2.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ----------

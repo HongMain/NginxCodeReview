@@ -1,5 +1,5 @@
 CXX = cc
-CXXFLAGS += -g -Wall -Wextra
+CXXFLAGS += -g -Wall -Wextra -Wunused-parameter
 
 NGX_ROOT = ..
 
@@ -12,8 +12,6 @@ all: $(TARGETS)
 
 clean:
 	$(CLEANUP)
-
-include $(NGX_ROOT)/objs/Makefile
 
 CORE_INCS = -I. \
 	-I/usr/local/include \
